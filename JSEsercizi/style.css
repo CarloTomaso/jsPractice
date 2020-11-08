@@ -1,0 +1,53 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container{
+ 
+margin: 0;
+    padding: 0;
+  
+}
+
+.nav-fixed{
+    background-color: black;
+    width: 150px;
+    height: 1000px;
+    position: fixed;
+}
+.nav-btn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+background-color: #0a0a0a;
+}
+
+.item{
+    margin-top: 20px;
+}
+
+.songs{
+   height:1000px;
+    background-color: #0a0a0a;
+    margin-left: 150px;
+  
+}
+.songs h1{
+    color: white;
+}
+.search{
+    padding:10px;
+  align-items: initial;
+ display: none;
+}
+.nav-link{
+    color: gray;
+}
+
+.btn-search{
+    height: 38px;
+}
+.logoSpotify{
+    height: 50px;
+    width: 120px; 
+}
