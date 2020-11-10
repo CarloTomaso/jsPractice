@@ -1,9 +1,9 @@
 
-const searchBar = document.getElementById('search')
-let searchWord = searchBar.value
 
-const fetchData = async (searchWord) => {
+const fetchData = async () => {
 
+    const searchBar = document.getElementById('search')
+    let searchWord = searchBar.value
 
     let res = await fetch(`https://rapidapi.p.rapidapi.com/search?q=${searchWord}`, {
         "method": "GET",
@@ -26,7 +26,7 @@ const fetchData = async (searchWord) => {
   <div class="card-body">
     <h5 class="card-title">${element.title}</h5>
     <p class="card-text">Album Title :${element.album.title}</p>
-    <a href="artist_page.html?id=${element.artist.name}" class="btn btn-primary">Go somewhere</a>
+    <a href="artist_page.html?id=${element.artist.name}" onclick='fetchArtist(searchBar.value)' class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 </div>
@@ -42,6 +42,7 @@ const fetchData = async (searchWord) => {
 
 const searchData = async (e) => {
     e.preventDefault()
+    const searchBar = document.getElementById('search')
     fetchData(searchBar.value)
     console.log(searchBar.value)
 }
@@ -51,13 +52,14 @@ function searchDisplay() {
 
     if (divSearch.style.display === 'none') {
         divSearch.style.display = 'block';
+
     } else {
         divSearch.style.display = 'none';
+
     }
 
 
 }
-
 
 
 
