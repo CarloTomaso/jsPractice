@@ -20,34 +20,43 @@
     <nav class="nav nav-fixed flex-column">
       <img class="logoSpotify" src="/img/logoSpoWhite.png" alt="logo">
       <div class="item">
-        <a class="nav-link active" href="#">
-          <img class="home" src="">Home</a>
-        <a onclick="searchDisplay()" class="nav-link" href="#">Cerca</a>
-        <a class="nav-link" href="#">Link</a>
+
+        <img class="home" src="/img/logoHome.png">
+        <a class="nav-link link-home " href="#">
+          Home</a>
+      </div>
+      <div class="item2">
+        <img class="home" src="/img/search.png">
+        <a onclick="searchDisplay()" class="nav-link nav-search" href="#">Cerca</a>
+      </div>
+
+      <a class="nav-link" href="#">Link</a>
+
     </nav>
     <div class="content">
-      <div class="nav-btn justify-content-end">
+      <div id="div-search" style="display: none" style="display: none" class="nav-btn ">
         <form class=" search form-inline my-2 my-lg-0" onsubmit='searchData(event)'>
           <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search" aria-label="Search">
           <button class=" btn-search btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
+      <h1 class="title">Song List</h1>
       <div class="songs">
-        <h1>Song List</h1>
+
         <div class="row" id="songs">
         </div>
       </div>
     </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

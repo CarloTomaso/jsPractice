@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin:0;
     padding:0;
@@ -11,26 +14,40 @@ margin: 0;
 
 .nav-fixed{
     background-color: black;
-    width: 150px;
+    width: 200px;
     height: 1000px;
     position: fixed;
+  
 }
-.nav-btn{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-background-color: #0a0a0a;
-}
+
 
 .item{
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 160px;
+    margin-left: 20px;
+
+}
+.item2{
+    display: flex;
+    align-items: center;
+    width: 160px;
+    margin-left: 20px;
+    
 }
 
-.songs{
-   height:1000px;
+.title{
     background-color: #0a0a0a;
-    margin-left: 150px;
-  
+    margin-bottom: 0;
+    color: white;
+    margin-left: 200px;
+}
+.songs{
+   height:10000px;
+    background-color: #0a0a0a;
+    margin-left: 200px;
+ display: flex;
 }
 .songs h1{
     color: white;
@@ -38,16 +55,53 @@ background-color: #0a0a0a;
 .search{
     padding:10px;
   align-items: initial;
- display: none;
+  justify-content: center;
+  background-color: #0a0a0a;
+  width: 100%;
+    display: flex;
 }
 .nav-link{
     color: gray;
+}
+.nav-link:hover{
+    color: white;
+ 
+}
+.nav-search{
+    padding-left: 8px;
+}
+.link-home{
+    padding: 10px;
 }
 
 .btn-search{
     height: 38px;
 }
 .logoSpotify{
-    height: 50px;
-    width: 120px; 
+    height: 60px;
+    width: 150px; 
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+
+}
+.home{
+    height: 20px;
+    margin-left: 30px;
+}.row{
+    height: 200px;
+}
+
+.card{
+    
+    background-color: rgb(12, 12, 12);
+}
+.card-img-top{
+    padding: 40px;
+}
+.card-title {
+    color: white;
+}
+.card-text{
+    color: white;
 }

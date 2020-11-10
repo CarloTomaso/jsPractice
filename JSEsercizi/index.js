@@ -3,9 +3,7 @@ const searchBar = document.getElementById('search')
 let searchWord = searchBar.value
 
 const fetchData = async (searchWord) => {
-    if (searchWord === '') {
-        searchWord = 'slipknot'
-    }
+
 
     let res = await fetch(`https://rapidapi.p.rapidapi.com/search?q=${searchWord}`, {
         "method": "GET",
@@ -21,8 +19,9 @@ const fetchData = async (searchWord) => {
     ul.innerHTML = ''
     datas.forEach(element => {
         ul.innerHTML += `
+      
         <div class="col-sm-12 col-xl-4 mb-5">
-        <div class="card" style="width: 18rem;">
+        <div class="card card-bg" style="width: 18rem;">
   <img class="card-img-top" src=${element.album.cover_medium} alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">${element.title}</h5>
@@ -31,6 +30,7 @@ const fetchData = async (searchWord) => {
   </div>
 </div>
 </div>
+
 `
     })
 
@@ -45,11 +45,17 @@ const searchData = async (e) => {
     fetchData(searchBar.value)
     console.log(searchBar.value)
 }
-
+//tasto cerca crea lo switch nella proprietà display
+let divSearch = document.getElementById('div-search');
 function searchDisplay() {
-    console.log(searchBar)
-    searchBar.style.display = 'block';
-    console.log('clicked')
+
+    if (divSearch.style.display === 'none') {
+        divSearch.style.display = 'block';
+    } else {
+        divSearch.style.display = 'none';
+    }
+
+
 }
 
 
