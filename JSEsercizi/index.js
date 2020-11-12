@@ -26,7 +26,7 @@ const fetchData = async () => {
   <div class="card-body">
     <h5 class="card-title">${element.title}</h5>
     <p class="card-text">Album Title :${element.album.title}</p>
-    <a href="artist_page.html?id=${element.artist.name}" onclick='fetchArtist(searchBar.value)' class="btn btn-primary">Go somewhere</a>
+    <a href="artist_page.html?id=${element.artist.name}" ' class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 </div>
@@ -52,6 +52,7 @@ function searchDisplay() {
 
     if (divSearch.style.display === 'none') {
         divSearch.style.display = 'block';
+
 
     } else {
         divSearch.style.display = 'none';

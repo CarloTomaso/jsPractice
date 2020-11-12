@@ -15,21 +15,34 @@ const fetchArtist = async (pageId) => {
     })
     let datas = res.data
     let divArtist = document.getElementById('divArtist')
-
+    console.log(datas[1].artist.picture_medium)
+    divArtist.innerHTML += `
+<div class=' row navArtista'>
+<h1 class='artistTitle'>${datas[1].artist.name}</h1>
+  <img src="${datas[1].artist.picture_medium}" class=" imageArtist card-img-top" alt="card image">
+ </div>
+`
+    let albumArtist = document.getElementById('albumArtist')
     datas.forEach(element => {
-        divArtist.innerHTML += `
-<div class='profiloArtista'>
-<div class="card" style="width: 18rem;">
-  <img src="${element.album.cover_medium}" class="card-img-top" alt="card image">
-  <div class="card-body">
-    <h5 class="card-title">${element.artist.name}</h5>
-    <p class="card-text">${element.artist.tracklist}</p>
+        albumArtist.innerHTML += `
+    <div class='album'>
+    <div class="col-sm-12 col-xl-3 mb-5">
+    <div class="card card-bg" style="width: 18rem;">
+<img class="card-img-top" src=${element.album.cover_medium} alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">${element.album.title}</h5>
 
-  </div>
-</div>
 </div>
 `
-    })
+        let songArtist = document.getElementById('songArtist');
+        datas.slice(0, 10).forEach(element => {
+            songArtist.innerHTML += `
+   
+    <li class='songlist'>${element.title}</li>
+    `
+        })
+    });
+
     console.log(res.data)
 }
-fetchArtist()
+fetchArtist(pageId)
