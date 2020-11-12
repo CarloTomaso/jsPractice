@@ -159,7 +159,7 @@ margin: 0;
      height: 300px;
      margin-left: 200px;
      display: flex;
- background-image: url('/img/concerto.jpg');
+ background-image: url('./img/concerto.jpg');
  background-size: cover;
  background-position:center;
   align-items: center;
@@ -251,13 +251,24 @@ font-weight: bolder;
     font-size: 15px;
     font-weight: lighter;
  }
+ .player-container{
+     display: flex;
+     flex-direction: column;
+     align-items:center; 
+ }
  .player{
-     margin-right: 100px;
+     margin-right: 20px;
      margin-top: 30px;
      width: 300px;
      display: flex;
      align-items: baseline;
      justify-content: space-between;
+}
+.line{
+    border-top: 3px solid #6e6e6e;
+    width: 450px;
+
+  
 }
 #footer-img{
     display: flex;
@@ -284,8 +295,15 @@ font-weight: bolder;
     margin-left: 10px;
  }
  .icon-footer-end{
+     display: flex;
      margin-top: 30px;
      margin-right: 50px;
+     align-items: center;
+ }
+ .line-volume{
+     margin-left: 10px;
+    border-top: 3px solid #a8a7a7;
+    width: 100px;
  }
  .fa-heart{
     color: #a8a7a7;
@@ -316,3 +334,6 @@ font-weight: bolder;
     margin-top: 40px;
     margin-left: 10px;
  }
+.red{
+    color:red;
+}

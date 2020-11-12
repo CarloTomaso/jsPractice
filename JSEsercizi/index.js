@@ -62,5 +62,11 @@ function searchDisplay() {
 
 }
 
+let heart = document.querySelector('.fa-heart');
+console.log(heart)
+heart.onclick = function () {
+    heart.classList.toggle('red')
+};
+
 
 
