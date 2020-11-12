@@ -40,8 +40,10 @@ const fetchArtist = async (pageId) => {
     let songArtist = document.getElementById('songArtist');
     dati.forEach(element => {
         songArtist.innerHTML += `
-   
+   <div class='song-details'>
+   <img class='img-list' src="${element.album.cover_medium}" alt='img-cover'>
     <li class='songlist'>${element.title}</li>
+    </div>
     `
     })
 
