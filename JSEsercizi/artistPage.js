@@ -41,7 +41,20 @@ const fetchArtist = async (pageId) => {
     <li class='songlist'>${element.title}</li>
     `
         })
+
     });
+    let footerImg = document.getElementById('footer-img');
+    footerImg.innerHTML += `
+    <img class='img-footer'src=${datas[2].artist.picture_medium} alt='imgArtist'>
+    <div class='description'>
+    <p class='song-footer'>${datas[2].title}<p>
+    <h5 class=title-img-footer>${datas[1].artist.name}</h5>
+    </div>
+    <div class='icon-img-footer'>
+    <i class="far fa-heart"></i>
+    <i class="fas fa-window-maximize"></i>
+    </div>
+    `
 
     console.log(res.data)
 }
