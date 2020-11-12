@@ -20,13 +20,13 @@ const fetchData = async () => {
     datas.forEach(element => {
         ul.innerHTML += `
       
-        <div class="col-sm-12 col-xl-4 mb-5">
+        <div class="card-container col-sm-12 col-xl-4 mb-5">
         <div class="card card-bg" style="width: 18rem;">
   <img class="card-img-top" src=${element.album.cover_medium} alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">${element.title}</h5>
     <p class="card-text">Album Title :${element.album.title}</p>
-    <a href="artist_page.html?id=${element.artist.name}" ' class="btn btn-primary">Go somewhere</a>
+    <a href="artist_page.html?id=${element.artist.name}" ' class=" btn"><i class="fas fa-arrow-alt-circle-right"></i></a>
   </div>
 </div>
 </div>

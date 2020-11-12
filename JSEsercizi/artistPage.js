@@ -34,15 +34,18 @@ const fetchArtist = async (pageId) => {
 
 </div>
 `
-        let songArtist = document.getElementById('songArtist');
-        datas.slice(0, 10).forEach(element => {
-            songArtist.innerHTML += `
+    })
+    let dati = datas.slice(0, 20);
+    console.log(dati)
+    let songArtist = document.getElementById('songArtist');
+    dati.forEach(element => {
+        songArtist.innerHTML += `
    
     <li class='songlist'>${element.title}</li>
     `
-        })
+    })
 
-    });
+
 
 
     console.log(res.data)

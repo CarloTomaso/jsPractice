@@ -13,9 +13,7 @@ body{
     margin:0;
     padding:0;
 }
-.content{
-    height: 100px;
-}
+
 .container-fluid{
  
 margin: 0;
@@ -51,7 +49,7 @@ margin: 0;
 
 .title{
     background-color: #0a0a0a;
-   
+   padding: 30px;
     color: white;
     margin-left: 200px;
     
@@ -65,14 +63,7 @@ margin: 0;
 .songs h1{
     color: white;
 }
-.search{
-    padding:10px;
-  align-items: initial;
-  justify-content: center;
-  background-color: #0a0a0a;
-  width: 100%;
-    display: flex;
-}
+
 .nav-link{
     color: gray;
 }
@@ -87,9 +78,38 @@ margin: 0;
 .link-home{
     padding: 10px;
 }
+.content{
+    height: 100px;
+    width: 200px;
+    margin-top: 30px;
+    padding: 5px;
+}
+.div-search{
+    display: flex;
+   
+}
+.search{
+ 
+    border: 0;
+ background-color: black;
+  width: 100%;
+    display: flex;
+    padding: 0;
 
+}
 .btn-search{
     height: 38px;
+    border: 0;
+    width: 40px;
+}
+.fa-search{
+    color: white;
+}
+#search{
+    width: 142px;
+    padding: 0px;
+    
+  
 }
 .logoSpotify{
     height: 60px;
@@ -107,8 +127,8 @@ margin: 0;
 }
 
 .card{
-    
-    background-color: rgb(27, 27, 27);
+
+    background-color: #1b1b1b;
 }
 .card:hover{
     background-color: rgb(37, 37, 37);
@@ -124,6 +144,16 @@ margin: 0;
 }
 .card-text{
     color: white;
+}
+
+.fa-arrow-alt-circle-right{
+    color: gray;
+    font-size: 50px;
+    transition: all 2s;
+}
+.fa-arrow-alt-circle-right:hover{
+   color: green;
+   transition: all 1s;
 }
  .navArtista{
      height: 300px;
