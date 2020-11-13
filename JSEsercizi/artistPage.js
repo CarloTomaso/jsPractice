@@ -52,4 +52,10 @@ const fetchArtist = async (pageId) => {
 
     console.log(res.data)
 }
+let heart = document.querySelector('.fa-heart');
+console.log(heart)
+heart.onclick = function () {
+    heart.classList.toggle('red')
+};
+
 fetchArtist(pageId)
