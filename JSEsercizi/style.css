@@ -1,7 +1,10 @@
 *{
     box-sizing: border-box;
-}
 
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+}
 html{
     height: 100%;
 }
@@ -130,6 +133,7 @@ margin: 0;
     margin-left: 200px;
     color: white;
     font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .menu{
 
@@ -288,10 +292,11 @@ margin-bottom: 10px;
      display: flex;
      flex-direction: column;
      align-items:center; 
+    
  }
  .player{
      margin-right: 20px;
-     margin-top: 30px;
+     margin-top: 20px;
      width: 300px;
      display: flex;
      align-items: baseline;
@@ -310,7 +315,8 @@ margin-bottom: 10px;
  
  .img-footer{
      height: 100px;
-     padding: 15px;
+     padding: 20px;
+   
  }
  .fa-podcast{
     color: #a8a7a7;
@@ -329,7 +335,7 @@ margin-bottom: 10px;
  }
  .icon-footer-end{
      display: flex;
-     margin-top: 30px;
+     margin-top: 10px;
      margin-right: 50px;
      align-items: center;
  }
@@ -348,7 +354,7 @@ margin-bottom: 10px;
     margin-left: 10px;
  }
  .description{
-     margin-top: 30px;
+     margin-top: 35px;
      display: flex;
      flex-direction: column;
  }
