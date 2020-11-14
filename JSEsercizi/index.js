@@ -17,7 +17,7 @@ const fetchData2 = async () => {
     datas.forEach(element => {
         sceltaRapida.innerHTML += `
           
-            <div class="card-container col-sm-12 col-xl-4 mb-5">
+            <div class="card-container col-sm-12 col-xl-3 mb-5">
             <div class="card card-bg" style="width: 18rem;">
       <img class="card-img-top" src=${element.album.cover_medium} alt="Card image cap">
       <div class="card-body">
@@ -50,7 +50,7 @@ const fetchData3 = async () => {
     let ascoltirecenti = document.getElementById('ascolti-recenti')
     datas.forEach(element => {
         ascoltirecenti.innerHTML += `
-        <div class="card-container col-sm-12 col-xl-4 mb-5">
+        <div class="card-container col-sm-12 col-xl-3 mb-5">
                 <div class="card card-bg" style="width: 18rem;">
           <img class="card-img-top" src=${element.album.cover_medium} alt="Card image cap">
           <div class="card-body">
@@ -83,7 +83,7 @@ const fetchData4 = async () => {
     let creatoPerTe = document.getElementById('creato-per-te')
     datas.forEach(element => {
         creatoPerTe.innerHTML += `
-    <div class="card-container col-sm-12 col-xl-4 mb-5">
+    <div class="card-container col-sm-12 col-xl-3 mb-5">
             <div class="card card-bg" style="width: 18rem;">
       <img class="card-img-top" src=${element.album.cover_medium} alt="Card image cap">
       <div class="card-body">
@@ -119,7 +119,7 @@ const fetchData = async () => {
     datas.forEach(element => {
         ul.innerHTML += `
       
-        <div class="card-container col-sm-12 col-xl-4 mb-5">
+        <div class="card-container col-sm-12 col-xl-3 mb-5">
         <div class="card card-bg" style="width: 18rem;">
   <img class="card-img-top" src=${element.album.cover_medium} alt="Card image cap">
   <div class="card-body">
@@ -177,9 +177,14 @@ lente.addEventListener("click", function (e) {
     menuHome.classList.toggle('none')
 }, false);
 
+//gestione dello schermo
 
-/* 
+let dimensioniSchermo = window.screen.width;
+let nav = document.querySelector('.nav');
 
+console.log(dimensioniSchermo)
+if (dimensioniSchermo < 765) {
+    nav.classList.remove('flex-column');
+    nav.classList.remove('nav-fixed');
 
-
-}) */
+}

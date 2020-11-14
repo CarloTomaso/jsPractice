@@ -32,7 +32,11 @@ margin: 0;
     z-index: 1;
   
 }
-
+.item-media{
+    display: flex;
+    align-items: baseline;
+    width: 100px;
+}
 
 .item{
     margin-top: 20px;
@@ -246,7 +250,7 @@ margin-bottom: 10px;
    margin-bottom: 100px;
      display: flex;
      flex-wrap: wrap;
-     margin-left: 250px;
+     margin-left: 200px;
   
  }
  .songTitle{
@@ -383,3 +387,115 @@ i:hover{
 .none{
     display: none;
 }
+
+/*smartphone*/
+
+ @media only screen and (max-width: 800px){
+    /* ridimensionamento nav*/
+   .container-fluid{
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .nav{
+       height: 100px;
+       display: flex;
+  
+
+       flex-wrap: wrap;
+       width: 100%;
+   }
+   
+    .justify-content-center{
+        display: flex;
+        width: 375px;
+        height:50px;
+  
+    }
+
+    .logoSpotify{
+        margin-top: 35px;
+        height: 50px;
+        width: 120px;
+   
+    }
+    .item-media{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    
+    .item{
+      
+        width: 50px;
+   
+    }
+    .item2{
+        width: 50px;
+       
+    
+    }
+    .home{
+        display: none;
+    }
+    .content{
+        margin-top: 20px;
+        width: 150px;
+    }
+    .btn-search{
+        width: 20px;
+    }
+    .search {
+        display: flex
+    }
+    #search{
+        width: 100px;
+    }
+    /*body*/
+    .songs{
+        margin-left: 60px;
+    }
+    .menu-home{
+        margin-left: 10px;
+    }
+    .title-menu{
+        margin-left: 10px;
+    }
+    .menu{
+        margin-left: 10px;
+    }
+    /* footer*/
+    .footer{
+       
+     
+    }
+    #footer-img{
+        margin-left: 40px;
+    }
+    .img-footer{
+        display: none;
+    }
+    i.fa-window-maximize{
+        display: none;
+    }
+    i.fa-random, i.fa-step-backward{
+        display: none;
+    }
+    i.fa-redo-alt{
+        display: none;
+    }
+    .line{
+        display: none;
+    }
+    .icon-footer-end{
+        display: none;
+    }
+    .player-container{
+        margin-right: 40px;
+    }
+    .player{
+        margin-top: 30px;
+        width: 100px;
+    }
+
+
+ }
