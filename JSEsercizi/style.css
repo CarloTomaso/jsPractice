@@ -37,6 +37,10 @@ margin: 0;
     align-items: baseline;
     width: 100px;
 }
+.item-media{
+    display: flex;
+    flex-direction: column;
+}
 
 .item{
     margin-top: 20px;
